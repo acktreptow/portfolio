@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio Website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!-- Desktop Header -->
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="#about">About</a></li>
+          <li><a class="mobile-nav__link" href="#featured">Projects</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero container">
+        <img class="hero__img" src="/hero-img.png" alt="Profile Picture" />
+        <h2 class="hero__subtitle">Hi, I'm Alex 👋</h2>
+        <h1 class="hero__title">
+          FRONT-END <br />
+          WEB DEVELOPER
+        </h1>
+        <p class="hero__description">
+          A <strong>Front-End</strong> web developer and
+          <strong>UI/UX</strong> enthusiast specialized in building
+          pixel-perfect interactive websites/applications.
+        </p>
+        <div class="hero__btn-container">
+          <a href="#contact" class="hero__btn btn">Reach out</a>
+          <a href="#" class="hero__btn btn">Download CV</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello, there! I'm Alex. A London-based
+            <strong>Front-End</strong> web developer who cares deeply about the
+            user experience.
+          </p>
+          <p class="about__description">
+            I'm very driven when learning something new. That's what happened
+            with video production during lockdown, where I went from no
+            experience to creating video content for multiple companies.
+          </p>
+          <p class="about__description">
+            It then happened again over the past year with Front-End
+            development, where I became <strong>Meta-certified</strong>. Now my
+            sole focus, I'm excited to bring these skills and unique,
+            user-focused voice to help any team I'm part of build web
+            applications that people actually enjoy using all day, everyday.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">React</li>
+              <li class="about__list">Bootstrap</li>
+              <li class="about__list">Markdown</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Git</li>
+              <li class="about__list">Figma</li>
+              <li class="about__list">Sass</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img"
+            src="/about-img.png"
+            alt="About section profile picture"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Little Lemon Reservation</h2>
+        </div>
+        <p class="featured__description">
+          Little Lemon is a fictional restaurant that thanks to this project,
+          now has a table reservation feature! The project was created in
+          <strong>React</strong> using <strong>Create React App</strong>. It
+          uses a combination of <strong>useState</strong>,
+          <strong>useEffect</strong>, <strong>React-Router-Dom</strong>, and
+          custom <strong>CSS</strong> to create a responsive
+          <strong>SPA</strong>
+          for the restaurant.
+        </p>
+        <p class="featured__description">
+          The heart of the project is the table reservation feature. The user
+          can fill out the <strong>controlled form</strong> to make a
+          reservation. Once submitted, they will be taken to a separate page
+          confirming their details. Their submission then gets saved into
+          <strong>local storage</strong> and displayed on the table reservation
+          section in case they would like to add another or delete previous
+          submissions.
+        </p>
+        <div class="featured__project-btn-container">
+          <a
+            class="btn featured__project-btn"
+            href="https://github.com/acktreptow/little-lemon.git"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            class="btn featured__project-btn"
+            href="https://acktreptow.github.io/little-lemon/"
+            target="_blank"
+            >Website</a
+          >
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="featured__img"
+              src="/little-lemon-1.png"
+              alt="Little Lemon hero/specials sections"
+              loading="lazy"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="featured__img"
+              src="/little-lemon-2.png"
+              alt="Little Lemon feedback/about sections"
+              loading="lazy"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="featured__img"
+              src="/little-lemon-3.png"
+              alt="Little Lemon confirmed booking page"
+              loading="lazy"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="featured__img"
+              src="/little-lemon-4.png"
+              alt="Little Lemon reserve table page"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Works Section -->
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          The following are 8 projects I have worked on. 4 of them were tasked
+          by Meta to receive their Front-End Developer certification, with the
+          other half completed to further skills in React/Bootstrap etc
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">Lucky Shrub</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="work__img"
+              src="/luckyshrub.png"
+              alt="Lucky Shrub homepage"
+              loading="lazy"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Lucky Shrub</h3>
+            <p class="work__project-description1">
+              A homepage for an Arizona-based garden design firm and the first
+              peer reviewed project I completed for Meta's Front-End Developer
+              course.
+            </p>
+            <p class="work__project-description2">
+              Meta's specifications only required <strong>HTML & CSS</strong> to
+              pass, but I have since gone back in include
+              <strong>JavaScript</strong> functionality and incorporate
+              <strong>responsive design</strong> to take the project to a more
+              advanced level.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/lucky-shrub-homepage.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/lucky-shrub-homepage/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Calculator App</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="work__img"
+              src="/react-calculator.png"
+              alt="Calculator made in React"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Calculator App</h3>
+            <p class="work__project-description1">
+              My first <strong>React</strong> application. A working calculator
+              that was tasked by Meta to test my knowledge of that chapter's
+              React concepts.
+            </p>
+            <p class="work__project-description2">
+              Both the <strong>useState</strong> and
+              <strong>useRef</strong> hooks, as well as a
+              <strong>controlled form</strong>, are used for functionality. I
+              also coded custom CSS to create a realistic looking calculator for
+              a more fun user experience.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/react-calculator.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/react-calculator/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Portfolio Page for Pete</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="work__img"
+              src="/portfolio-pete.png"
+              alt="Pete's portfolio page"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Portfolio Page for Pete</h3>
+            <p class="work__project-description1">
+              A portfolio page for Meta's fictional character, Pete. Created in
+              <strong>React</strong> with <strong>Create React App</strong>, the
+              page also incorporates <strong>Chakra UI</strong>,
+              <strong>Formik</strong> and <strong>Yup</strong>.
+            </p>
+            <p class="work__project-description2">
+              A particularly rewarding project to complete. It drilled concepts
+              like how to structure a CRA project, how to use 3rd-party
+              libraries in React, breaking the page down into
+              <strong>components</strong> and <strong>prop handling</strong>.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/portfolio-pete.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/portfolio-pete/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Little Lemon Mobile</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              class="work__img"
+              src="/little-lemon-ux.png"
+              alt="Little Lemon's Figma components & wireframes"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Little Lemon Mobile</h3>
+            <p class="work__project-description1">
+              A <strong>UX/UI</strong> focused project that includes a user
+              persona, journey map, wireframes and a high-fidelity protoytype of
+              the mobile version of Little Lemon, seen in the featured section.
+            </p>
+            <p class="work__project-description2">
+              All sections were created in <strong>Figma</strong>. Something
+              Meta specified due to how many Front-End developers collaborate
+              closely with UX/UI designers on projects.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/little-lemon-mobile-ux-ui.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://www.figma.com/proto/RCnCHzOHnVoz37xDycm0Nm/Prototype-for-Little-Lemon-Book-Table-Feature?type=design&node-id=204-36&t=iTkZ9hAPYTX4NuP9-6&starting-point-node-id=204%3A36"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <h3 class="work__project-title">XGS Publishing</h3>
+          <div class="work__img-wrapper work__image5">
+            <img
+              class="work__img"
+              src="/xgs.png"
+              alt="XGS Publishing Bootstrap homepage"
+            />
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">XGS Publishing</h3>
+            <p class="work__project-description1">
+              A <strong>Bootstrap</strong> homepage for Xbox's publishing
+              division. The project includes numerous Bootstrap components like
+              modals, forms and cards. Plus some vanilla
+              <strong>JavaScript</strong> and the <strong>Mapbox API</strong>.
+            </p>
+            <p class="work__project-description2">
+              As my first Bootstrap project, this one was particularly rewarding
+              because it helped me achieve my goal of learning one of the
+              popular CSS libraries - something the Meta syllabus was
+              surprisingly limited on.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/xgs-publishing.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/xgs-publishing/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <h3 class="work__project-title">Movie Recommender</h3>
+          <div class="work__img-wrapper work__image6">
+            <img
+              class="work__img"
+              src="/movie-recommender.png"
+              alt="Movie recommender homepage"
+            />
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">Movie Recommender</h3>
+            <p class="work__project-description1">
+              This project calls <strong>The Movie Database API</strong> to fix
+              choice paralysis. The user picks a genre and a movie fitting that
+              selection will have its information displayed. They then interact
+              with the page to like or dislike the API's recommendation.
+            </p>
+            <p class="work__project-description2">
+              This project was created with the sole goal of getting hands-on
+              experience with <strong>Asynchronous JavaScript</strong>.
+              Particularly with <strong>ES8 Async/Await</strong>.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/movie-recommender.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/movie-recommender/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <h3 class="work__project-title">Live Music Locator</h3>
+          <div class="work__img-wrapper work__image7">
+            <img
+              class="work__img"
+              src="/live-music-locator.png"
+              alt="Live Music Locator homepage"
+            />
+          </div>
+          <div class="work__project work__content7">
+            <h3 class="work__project-subtitle">Live Music Locator</h3>
+            <p class="work__project-description1">
+              This project uses vanilla HTML and CSS to create a
+              <strong>non-scrolling homepage</strong> with a
+              <strong>video background</strong>. Live Music Locator also
+              features the simplistic UX these modern layouts are known for.
+            </p>
+            <p class="work__project-description2">
+              The video was professionally edited in
+              <strong>Premiere Pro</strong>, and set up so that user accessing
+              the CSS can add their own color overlay to suit their tastes.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/live-music-locator.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/live-music-locator/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <h3 class="work__project-title">PlayStation Productions</h3>
+          <div class="work__img-wrapper work__image8">
+            <img
+              class="work__img"
+              src="/ps-productions.png"
+              alt="PlayStation Productions React/Bootstrap homepage"
+            />
+          </div>
+          <div class="work__project work__content8">
+            <h3 class="work__project-subtitle">PlayStation Productions</h3>
+            <p class="work__project-description1">
+              A <strong>React</strong> homepage for PlayStation's TV and Movie
+              division, which imports <strong>Bootstrap</strong> for the CSS.
+              This project was all about seeing how the two technologies work
+              together, as React Bootstrap differs from the regular library.
+            </p>
+            <p class="work__project-description2">
+              The homepage also uses
+              <strong>higher-order functions</strong> like .map to have the code
+              adhere to <strong>DRY</strong>, as well as incorporating new
+              components like carousels.
+            </p>
+            <div class="work__project-btn-container">
+              <a
+                class="btn work__project-btn"
+                href="https://github.com/acktreptow/ps-productions.git"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn work__project-btn"
+                href="https://acktreptow.github.io/ps-productions/"
+                target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether it's a business enquiry, potential collaboration, or you just
+          want to say hi, my inbox/DMs are always open. Feel free to reach out
+          and I will get back to you as soon as possible.
+        </p>
+        <div class="contact__btn-container">
+          <div>
+            <a
+              class="contact__btn btn"
+              href="mailto:acktreptow@gmail.com"
+              target="_blank"
+              >Email</a
+            >
+          </div>
+          <div>
+            <a
+              class="contact__btn btn"
+              href="https://www.linkedin.com/in/acktreptow"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer container section">
+      <h3 class="footer__title">
+        Copyright &#169; 2023 Alex Treptow <br />
+        All Rights Reserved
+      </h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
