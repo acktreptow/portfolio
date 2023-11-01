@@ -66,7 +66,7 @@
   }
 
   .work__project-title {
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
     margin-bottom: 1.5rem;
   }
 
@@ -194,7 +194,7 @@
 
   .work__project-subtitle {
     display: block;
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 }
 
