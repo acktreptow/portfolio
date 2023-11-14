@@ -3,7 +3,7 @@
 A portfolio website to showcase my Front-End Developer skills with various projects.
 You can view this site at the link below.
 
-[treptow.dev](treptow.dev)
+[treptow.dev](https://www.treptow.dev)
 
 ## Technologies Used:
 
