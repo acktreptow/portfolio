@@ -141,7 +141,7 @@
   }
 
   .hero__description {
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
   }
 
   .hero__btn {
