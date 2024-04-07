@@ -47,7 +47,7 @@
 }
 
 .work__project-btn {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
 }
 
 .work__project-subtitle {
@@ -61,7 +61,6 @@
   }
 
   .work__description {
-    font-size: var(--size-base);
     margin: 1.5rem auto;
   }
 
@@ -71,17 +70,11 @@
   }
 
   .work__project-description1 {
-    font-size: var(--size-base);
     margin: 1.5rem 0;
   }
 
   .work__project-description2 {
-    font-size: var(--size-base);
     margin-bottom: 1.5rem;
-  }
-
-  .work__project-btn {
-    font-size: var(--size-base);
   }
 }
 
