@@ -61,7 +61,7 @@
   }
 
   .work__description {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
     margin: 1.5rem auto;
   }
 
@@ -71,12 +71,12 @@
   }
 
   .work__project-description1 {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
     margin: 1.5rem 0;
   }
 
   .work__project-description2 {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
     margin-bottom: 1.5rem;
   }
 
@@ -252,8 +252,7 @@
 
   .work__description {
     font-size: var(--size-2xl);
-    margin: 1.5rem auto;
-    margin-bottom: 3rem;
+    margin: 2rem auto;
   }
 
   .work__project-description1 {
