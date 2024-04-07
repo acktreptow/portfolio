@@ -14,8 +14,8 @@
 
 .header__bars {
   color: var(--clr-light);
-  width: var(--size-3xl);
-  height: var(--size-3xl);
+  width: var(--size-2xl);
+  height: var(--size-2xl);
   display: block;
   margin-right: 2rem;
 }
