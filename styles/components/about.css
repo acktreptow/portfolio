@@ -17,7 +17,7 @@
 
 .about__description {
   max-width: 60ch;
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   color: var(--clr-slate400);
 }
 
@@ -39,7 +39,7 @@
   flex-direction: column;
   gap: 0.75em;
   list-style: "\1F44D";
-  padding-left: 1.25em;
+  padding-left: 1.5em;
   padding-bottom: 1rem;
   padding-top: 0;
   flex: 1;
@@ -67,10 +67,6 @@
 
   .about__title {
     font-size: var(--size-3xl);
-  }
-
-  .about__description {
-    font-size: var(--size-base);
   }
 }
 
