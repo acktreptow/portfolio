@@ -1,5 +1,5 @@
 .featured__subtitle {
-  font-size: var(--size-sm);
+  font-size: var(--size-xl);
   color: var(--clr-slate400);
   text-transform: capitalize;
   font-weight: 400;
@@ -20,7 +20,7 @@
 .featured__description {
   max-width: 60ch;
   color: var(--clr-slate400);
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   margin: 1rem 0;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .featured__project-btn {
-  font-size: var(--size-xs);
+  font-size: var(--size-base);
 }
 
 .featured__img-container {
@@ -57,12 +57,7 @@
   }
 
   .featured__description {
-    font-size: var(--size-base);
     margin: 1.5rem 0;
-  }
-
-  .featured__project-btn {
-    font-size: var(--size-base);
   }
 
   .featured__img-container {
