@@ -10,8 +10,8 @@
 
 .hero__img {
   border-radius: 50%;
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .hero__subtitle {
@@ -50,11 +50,6 @@
 @media (min-width: 475px) {
   .hero {
     gap: 1.5rem;
-  }
-
-  .hero__img {
-    width: 7.5rem;
-    height: 7.5rem;
   }
 
   .hero__subtitle {
