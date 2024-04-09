@@ -55,6 +55,11 @@
   margin-left: 0.25em;
 }
 
+.about__img {
+  width: 20rem;
+  margin: auto;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .about {
