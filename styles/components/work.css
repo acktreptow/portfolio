@@ -33,14 +33,14 @@
   font-size: var(--size-base);
   color: var(--clr-slate400);
   margin: 1rem 0;
-  text-align: start;
+  text-align: center;
 }
 
 .work__project-description2 {
   font-size: var(--size-base);
   color: var(--clr-slate400);
   margin-bottom: 1rem;
-  text-align: start;
+  text-align: center;
 }
 
 .work__project-btn-container {
