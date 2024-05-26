@@ -90,7 +90,7 @@
   }
 
   .about__img {
-    width: 28.6875rem;
+    width: 22.5rem;
   }
 
   .about__list {
@@ -127,6 +127,10 @@
 
   .about__list {
     font-size: var(--size-lg);
+  }
+
+  .about__img {
+    width: 28rem;
   }
 }
 
